@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Homework 10</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cat with libraries</title>
 
    <!-- Fonts styles -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,13 +23,19 @@
 </head>
 
 <body>
+
+   <!-- Version with libraries -->
+
    <div class="container">
-      <ul>
-         <li class="without-libraries"><a href="./cat.html">Search for cats (Version without libraries)</a></li>
-         <li><a href="./cat-libraries.html">Search for cats (Version with libraries)</a></li>
-      </ul>
+      <p class="goback"><a href="index.html">Go back</a></p>
+
+      <select class="js-hidden breed-select">
+         <option data-placeholder="true"></option>
+      </select>
+      <div class="js-hidden cat-info">
+      </div>
    </div>
 
-</body>
 
-</html>
+
+   <script type="module" src="./js/cat-libraries.js"></script>

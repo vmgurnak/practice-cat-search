@@ -1,0 +1,118 @@
+/* Box model * */
+
+html {
+  box-sizing: border-box;
+}
+
+/* Reset styles */
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Responsive images */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+/* -----------CONTAINER------------ */
+
+.container {
+  max-width: 768px;
+
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: none;
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ------------js-show, js-hidden--------- */
+
+.js-show {
+  display: block;
+}
+
+.js-hidden {
+  display: none;
+}
+
+/* ------------index.html------------ */
+
+.without-libraries {
+  margin-bottom: 20px;
+}
+
+/* -----cat.html, cat-libraries.html------ */
+
+.goback {
+  margin-bottom: 20px;
+}
+
+.breed-select {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.cat-info {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .cat-info {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cat-img {
+    max-width: calc(50% - 20px);
+  }
+}
+
+.cat-container {
+  padding: 10px;
+}
+
+.cat-name {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.cat-descr {
+  margin-bottom: 10px;
+}
+
+.cat-temper {
+  font-weight: 500;
+}
+
+.cat-temper-descr {
+  font-weight: 400;
+}
